@@ -22,7 +22,10 @@ void loop() {
 
   espSerial.println(str); //Gửi giá trị nhiệt độ và độ ẩm qua Software serial
   Serial.println(str); //In ra Serial Monitor chuỗi gửi đi
-  
+  if (espSerial.available()) {
+    String str2 =  espSerial.readString();
+    Serial.println(str2); //In ra Serial Monitor chuỗi gửi đi  
+  }
 }
 
 

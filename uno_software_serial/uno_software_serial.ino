@@ -27,6 +27,7 @@ void loop() {
     Serial.println("Time:" + value2);         // In ra phần tử thứ 1
     Serial.println("Temperature:" + value3);  // In ra phần tử thứ 1
     Serial.println("Humidity:" + value4);     // In ra phần tử thứ 1
+    unoSerial.println("da nhan dc r nhe");
   }
   delay(1000);
 }
